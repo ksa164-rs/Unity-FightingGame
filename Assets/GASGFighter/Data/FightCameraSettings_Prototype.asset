@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de8de9674d9240fb95ef28de5bca11d4, type: 3}
+  m_Name: FightCameraSettings_Prototype
+  m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FightCameraSettings
+  fieldOfView: 35
+  cameraHeight: 0.5
+  lookAtHeight: 1.27
+  horizontalOffset: 0
+  baseDistance: 5
+  maximumDistance: 13
+  distancePerSeparation: 0.151
+  airborneFollow: 0.45
+  positionSmoothness: 7
+  rotationSmoothness: 7

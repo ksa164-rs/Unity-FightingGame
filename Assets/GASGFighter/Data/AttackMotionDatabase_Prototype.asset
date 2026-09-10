@@ -1,0 +1,363 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2383297398653213948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a7d0370870077c43a600ec9fc56add3, type: 3}
+  m_Name: MiddleAttack
+  m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterAttackDefinition
+  displayName: "\u7ACB\u3061\u4E2DP"
+  action: {fileID: -3555184395167837202, guid: f83d0b1ae39caf14eb225b2665f04f57, type: 2}
+  animationClip: {fileID: 7400000, guid: 2f32b2b272255d947a638e3b83e30cb6, type: 2}
+  animatorTrigger: attack_002
+  startupFrames: 5
+  activeFrames: 4
+  recoveryFrames: 14
+  enableAttackCancel: 1
+  cancelStartFrame: 5
+  cancelEndFrame: 8
+  cancelOnHitOrBlockOnly: 1
+  cancelTargets: 8
+  damage: 600
+  hitStunFrames: 22
+  blockStunFrames: 16
+  hitStopFrames: 8
+  hitStopTimeScale: 0.1
+  attackerKnockbackOnHit: 1.8
+  attackerKnockbackOnBlock: 2.4
+  knockback: 3.2
+  guardHeight: 0
+  cameraShakePositionAmplitude: 0.06
+  cameraShakeRotationAmplitude: 0.3
+  cameraShakeDurationFrames: 6
+  cameraShakeFrequency: 34
+  hitboxes:
+  - label: Main
+    startFrame: 5
+    endFrame: 8
+    center: {x: 0.95, y: 1.2, z: 0}
+    size: {x: 1.2, y: 0.85, z: 0.95}
+  hitboxCenter: {x: 0.95, y: 1.2, z: 0}
+  hitboxSize: {x: 1.2, y: 0.85, z: 0.95}
+  isProjectile: 0
+  projectilePrefab: {fileID: 0}
+  projectileImpactPrefab: {fileID: 0}
+  projectileSpawnFrame: 12
+  projectileSpawnOffset: {x: 0.95, y: 1.15, z: 0}
+  projectileSpeed: 7.5
+  projectileRadius: 0.28
+  projectileLifetime: 2.4
+  impactVfxLifetime: 1.2
+  isThrow: 0
+  knockdownFrames: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4173d931af94d55aef6a1f9ce2d7b42, type: 3}
+  m_Name: AttackMotionDatabase_Prototype
+  m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterAttackDatabase
+  lightAttack: {fileID: 1669736408926370095}
+  middleAttack: {fileID: -2383297398653213948}
+  heavyAttack: {fileID: 7830054887319679232}
+  specialAttack: {fileID: 5456726124563164940}
+  throwAttack: {fileID: 9063673587008454218}
+  moveBindings:
+  - moveId: ken.light_shoryuken.command
+    displayName: "\u6607\u9F8D\u62F3\uFF08623\uFF0B\u5F31\uFF09"
+    attack: {fileID: 5456726124563164940}
+    inputButton: 0
+    context: 4
+    cancelCategory: 8
+    commandDirections: 060000000200000003000000
+    commandWindowFrames: 12
+    priority: 100
+  - moveId: ken.forward_throw
+    displayName: "\u524D\u6295\u3052"
+    attack: {fileID: 9063673587008454218}
+    inputButton: 4
+    context: 4
+    cancelCategory: 16
+    commandDirections: 
+    commandWindowFrames: 6
+    priority: 80
+  - moveId: ken.light_shoryuken.legacy
+    displayName: "\u6607\u9F8D\u62F3\uFF08\u5FC5\u6BBA\u30DC\u30BF\u30F3\uFF09"
+    attack: {fileID: 5456726124563164940}
+    inputButton: 3
+    context: 4
+    cancelCategory: 8
+    commandDirections: 
+    commandWindowFrames: 6
+    priority: 50
+  - moveId: ken.standing_hp
+    displayName: "\u7ACB\u3061\u5F37P"
+    attack: {fileID: 7830054887319679232}
+    inputButton: 2
+    context: 4
+    cancelCategory: 4
+    commandDirections: 
+    commandWindowFrames: 6
+    priority: 30
+  - moveId: ken.standing_mp
+    displayName: "\u7ACB\u3061\u4E2DP"
+    attack: {fileID: -2383297398653213948}
+    inputButton: 1
+    context: 4
+    cancelCategory: 2
+    commandDirections: 
+    commandWindowFrames: 6
+    priority: 20
+  - moveId: ken.standing_lp
+    displayName: "\u7ACB\u3061\u5F31P"
+    attack: {fileID: 1669736408926370095}
+    inputButton: 0
+    context: 4
+    cancelCategory: 1
+    commandDirections: 
+    commandWindowFrames: 6
+    priority: 10
+  - moveId: ken.hadouken
+    displayName: "\u6CE2\u52D5\u62F3"
+    attack: {fileID: 11400000, guid: d61e28d00f6a4c51836227434ac8d001, type: 2}
+    inputButton: 3
+    context: 4
+    cancelCategory: 8
+    commandDirections: 020000000300000006000000
+    commandWindowFrames: 12
+    priority: 110
+--- !u!114 &1669736408926370095
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a7d0370870077c43a600ec9fc56add3, type: 3}
+  m_Name: LightAttack
+  m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterAttackDefinition
+  displayName: "\u7ACB\u3061\u5F31P"
+  action: {fileID: -252847325795049847, guid: f83d0b1ae39caf14eb225b2665f04f57, type: 2}
+  animationClip: {fileID: 7400000, guid: c8f2b221a488269418346361a8ae5082, type: 2}
+  animatorTrigger: attack_001
+  startupFrames: 4
+  activeFrames: 3
+  recoveryFrames: 7
+  enableAttackCancel: 1
+  cancelStartFrame: 4
+  cancelEndFrame: 6
+  cancelOnHitOrBlockOnly: 1
+  cancelTargets: 8
+  damage: 300
+  hitStunFrames: 14
+  blockStunFrames: 9
+  hitStopFrames: 4
+  hitStopTimeScale: 0.1
+  attackerKnockbackOnHit: 1.8
+  attackerKnockbackOnBlock: 2.4
+  knockback: 2.5
+  guardHeight: 0
+  cameraShakePositionAmplitude: 0.03
+  cameraShakeRotationAmplitude: 0.15
+  cameraShakeDurationFrames: 4
+  cameraShakeFrequency: 36
+  hitboxes:
+  - label: Main
+    startFrame: 4
+    endFrame: 6
+    center: {x: 0.85, y: 1.15, z: 0}
+    size: {x: 1.05, y: 0.75, z: 0.9}
+  hitboxCenter: {x: 0.85, y: 1.15, z: 0}
+  hitboxSize: {x: 1.05, y: 0.75, z: 0.9}
+  isProjectile: 0
+  projectilePrefab: {fileID: 0}
+  projectileImpactPrefab: {fileID: 0}
+  projectileSpawnFrame: 12
+  projectileSpawnOffset: {x: 0.95, y: 1.15, z: 0}
+  projectileSpeed: 7.5
+  projectileRadius: 0.28
+  projectileLifetime: 2.4
+  impactVfxLifetime: 1.2
+  isThrow: 0
+  knockdownFrames: 0
+--- !u!114 &5456726124563164940
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a7d0370870077c43a600ec9fc56add3, type: 3}
+  m_Name: SpecialAttack
+  m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterAttackDefinition
+  displayName: "\u6607\u9F8D\u62F3\uFF08\u5F31\uFF09"
+  action: {fileID: -7500575088735991356, guid: f83d0b1ae39caf14eb225b2665f04f57, type: 2}
+  animationClip: {fileID: 7400000, guid: 0ffdaafbab3a4ba4aa386481209c420e, type: 2}
+  animatorTrigger: SpecialAttack
+  startupFrames: 16
+  activeFrames: 10
+  recoveryFrames: 23
+  enableAttackCancel: 0
+  cancelStartFrame: 15
+  cancelEndFrame: 27
+  cancelOnHitOrBlockOnly: 1
+  cancelTargets: 0
+  damage: 1100
+  hitStunFrames: 1
+  blockStunFrames: 20
+  hitStopFrames: 12
+  hitStopTimeScale: 0.1
+  attackerKnockbackOnHit: 0
+  attackerKnockbackOnBlock: 2.4
+  knockback: 7
+  guardHeight: 0
+  cameraShakePositionAmplitude: 0.16
+  cameraShakeRotationAmplitude: 0.8
+  cameraShakeDurationFrames: 10
+  cameraShakeFrequency: 30
+  hitboxes:
+  - label: Rising Main
+    startFrame: 5
+    endFrame: 14
+    center: {x: 0.85, y: 1.45, z: 0}
+    size: {x: 1.25, y: 1.65, z: 1.1}
+  hitboxCenter: {x: 0.85, y: 1.45, z: 0}
+  hitboxSize: {x: 1.25, y: 1.65, z: 1.1}
+  isProjectile: 0
+  projectilePrefab: {fileID: 0}
+  projectileImpactPrefab: {fileID: 0}
+  projectileSpawnFrame: 12
+  projectileSpawnOffset: {x: 0.95, y: 1.15, z: 0}
+  projectileSpeed: 7.5
+  projectileRadius: 0.28
+  projectileLifetime: 2.4
+  impactVfxLifetime: 1.2
+  isThrow: 0
+  knockdownFrames: 55
+--- !u!114 &7830054887319679232
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a7d0370870077c43a600ec9fc56add3, type: 3}
+  m_Name: HeavyAttack
+  m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterAttackDefinition
+  displayName: "\u7ACB\u3061\u5F37P"
+  action: {fileID: -2631618015140645795, guid: f83d0b1ae39caf14eb225b2665f04f57, type: 2}
+  animationClip: {fileID: 7400000, guid: 57a4b16e849d7e649a1642ff0b9047af, type: 2}
+  animatorTrigger: attack_003
+  startupFrames: 10
+  activeFrames: 5
+  recoveryFrames: 17
+  enableAttackCancel: 1
+  cancelStartFrame: 10
+  cancelEndFrame: 14
+  cancelOnHitOrBlockOnly: 1
+  cancelTargets: 8
+  damage: 800
+  hitStunFrames: 25
+  blockStunFrames: 20
+  hitStopFrames: 10
+  hitStopTimeScale: 0.1
+  attackerKnockbackOnHit: 1.8
+  attackerKnockbackOnBlock: 2.4
+  knockback: 4.5
+  guardHeight: 0
+  cameraShakePositionAmplitude: 0.1
+  cameraShakeRotationAmplitude: 0.5
+  cameraShakeDurationFrames: 8
+  cameraShakeFrequency: 32
+  hitboxes:
+  - label: Main
+    startFrame: 10
+    endFrame: 14
+    center: {x: 1.05, y: 1.25, z: 0}
+    size: {x: 1.35, y: 0.95, z: 1}
+  hitboxCenter: {x: 1.05, y: 1.25, z: 0}
+  hitboxSize: {x: 1.35, y: 0.95, z: 1}
+  isProjectile: 0
+  projectilePrefab: {fileID: 0}
+  projectileImpactPrefab: {fileID: 0}
+  projectileSpawnFrame: 12
+  projectileSpawnOffset: {x: 0.95, y: 1.15, z: 0}
+  projectileSpeed: 7.5
+  projectileRadius: 0.28
+  projectileLifetime: 2.4
+  impactVfxLifetime: 1.2
+  isThrow: 0
+  knockdownFrames: 0
+--- !u!114 &9063673587008454218
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a7d0370870077c43a600ec9fc56add3, type: 3}
+  m_Name: Throw
+  m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterAttackDefinition
+  displayName: "\u524D\u6295\u3052"
+  action: {fileID: -5387676842828362316, guid: f83d0b1ae39caf14eb225b2665f04f57, type: 2}
+  animationClip: {fileID: 0}
+  animatorTrigger: Throw
+  startupFrames: 5
+  activeFrames: 3
+  recoveryFrames: 23
+  enableAttackCancel: 0
+  cancelStartFrame: 8
+  cancelEndFrame: 30
+  cancelOnHitOrBlockOnly: 1
+  cancelTargets: 0
+  damage: 1200
+  hitStunFrames: 1
+  blockStunFrames: 1
+  hitStopFrames: 8
+  hitStopTimeScale: 0.1
+  attackerKnockbackOnHit: 0
+  attackerKnockbackOnBlock: 0
+  knockback: 6.5
+  guardHeight: 3
+  cameraShakePositionAmplitude: 0.12
+  cameraShakeRotationAmplitude: 0.6
+  cameraShakeDurationFrames: 8
+  cameraShakeFrequency: 28
+  hitboxes:
+  - label: Throw Range
+    startFrame: 5
+    endFrame: 7
+    center: {x: 0.65, y: 1, z: 0}
+    size: {x: 0.7, y: 1.5, z: 0.9}
+  hitboxCenter: {x: 0.65, y: 1, z: 0}
+  hitboxSize: {x: 0.7, y: 1.5, z: 0.9}
+  isProjectile: 0
+  projectilePrefab: {fileID: 0}
+  projectileImpactPrefab: {fileID: 0}
+  projectileSpawnFrame: 12
+  projectileSpawnOffset: {x: 0.95, y: 1.15, z: 0}
+  projectileSpeed: 7.5
+  projectileRadius: 0.28
+  projectileLifetime: 2.4
+  impactVfxLifetime: 1.2
+  isThrow: 1
+  knockdownFrames: 55

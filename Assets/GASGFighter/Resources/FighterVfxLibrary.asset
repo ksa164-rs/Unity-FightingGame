@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ffc42ee544d0bb33ea81794ba16a3, type: 3}
+  m_Name: FighterVfxLibrary
+  m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterVfxLibrary
+  normalAttackPrefab: {fileID: 3834918509722078523, guid: 4fbbd853cdb359144b3bd213e6dad444, type: 3}
+  shoryukenPrefab: {fileID: 312472869048458870, guid: f5ef2adaaf2328d468d9bd9a00f1456e, type: 3}
+  hitPrefab: {fileID: 4459932274825341103, guid: 27d8e8034ac755545aaebed045ec110e, type: 3}
+  guardPrefab: {fileID: 4856440728611375420, guid: c41072ba105737a4b943749e582ff806, type: 3}
+  hadoukenPrefab: {fileID: 109798464310440352, guid: 9027334a7f374b84abbea3986de3b805, type: 3}
+  shoryukenActionIds:
+  - SpecialAttack
+  hadoukenActionIds:
+  - SpecialAttack_Hadouken
+  normalAttackOffset: {x: 0.3, y: 1.1, z: -0.08}
+  shoryukenOffset: {x: 0.12, y: 0, z: -0.08}
+  contactOffset: {x: 0, y: 0, z: -0.08}
+  attachNormalAttackToFighter: 1
+  normalAttackLifetime: 0.65
+  shoryukenLifetime: 1.5
+  hitLifetime: 1
+  guardLifetime: 1
+  hadoukenImpactLifetime: 1.3
