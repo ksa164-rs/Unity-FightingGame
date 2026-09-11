@@ -168,7 +168,7 @@ namespace GASG.Fighting.Editor.Tests
 
             FighterMoveBinding shoryuken = database.FindMoveById("ken.light_shoryuken.command");
             Assert.That(shoryuken, Is.Not.Null);
-            Assert.That(shoryuken.Attack.ActionId, Is.EqualTo("SpecialAttack"));
+            Assert.That(shoryuken.Attack.ActionId, Is.EqualTo("LightShoryuken"));
             Assert.That(shoryuken.Attack.AnimationClip, Is.Not.Null);
             Assert.That(shoryuken.Attack.AnimationClip.name, Is.EqualTo("shouryuken"));
             Assert.That(shoryuken.InputButton, Is.EqualTo(FighterAttackButton.Light));

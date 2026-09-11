@@ -13,7 +13,7 @@ namespace GASG.Fighting
         [SerializeField] private string actionId = "action.new";
 
         [InspectorName("モーション管理番号")]
-        [Tooltip("AS_p01_000_001形式。p01はキャラクター番号で、対戦の1Pではありません。")]
+        [Tooltip("AS_p01_000形式。p01はキャラクター番号で、対戦の1Pではありません。")]
         [SerializeField] private string motionId = string.Empty;
 
         [InspectorName("表示名")]
@@ -33,7 +33,7 @@ namespace GASG.Fighting
         {
             if (!FighterMotionNaming.IsValid(newMotionId))
             {
-                throw new System.ArgumentException("管理番号はAS_p01_000_001形式の半角英数字で指定してください。");
+                throw new System.ArgumentException("管理番号はAS_p01_000形式の半角英数字で指定してください。");
             }
             motionId = newMotionId;
             displayName = string.IsNullOrWhiteSpace(newDisplayName) ? motionId : newDisplayName.Trim();

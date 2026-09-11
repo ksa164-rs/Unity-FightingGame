@@ -20,7 +20,7 @@ namespace GASG.Fighting.Editor
         private static T[] Components<T>() where T : Component => SceneManager.GetActiveScene()
             .GetRootGameObjects().SelectMany(r => r.GetComponentsInChildren<T>(true)).ToArray();
 
-        [MenuItem("GASG/Lighting Review/Refine Floor Depth %#F7")]
+        [MenuItem("GASG/ステージ照明（レビュー）/03. 調整/レビュー用の床奥行きを調整")]
         public static void RefineFloorDepth()
         {
             try
@@ -67,7 +67,7 @@ namespace GASG.Fighting.Editor
             catch (Exception e) { Debug.LogError("[Stage Lighting][失敗] " + e); }
         }
 
-        [MenuItem("GASG/Lighting Review/Create Bright Edges Copy %#F8")]
+        [MenuItem("GASG/ステージ照明（レビュー）/02. 複製/明るい縁取り用コピーを作成")]
         public static void CreateBrightEdgesCopy()
         {
             try
@@ -176,7 +176,7 @@ namespace GASG.Fighting.Editor
             }
         }
 
-        [MenuItem("GASG/Lighting Review/Inspect Current Scene %#F9")]
+        [MenuItem("GASG/ステージ照明（レビュー）/01. 確認（変更なし）/現在のシーンを確認")]
         public static void Inspect()
         {
             Directory.CreateDirectory(ReportFolder);
@@ -195,7 +195,7 @@ namespace GASG.Fighting.Editor
             Debug.Log("[Stage Lighting][成功] 読み取り検証と比較画像を保存しました。");
         }
 
-        [MenuItem("GASG/Lighting Review/Create Copy and Bake %#F10")]
+        [MenuItem("GASG/ステージ照明（レビュー）/02. 複製/コピーを作成してベイク")]
         public static void CreateCopyAndBake()
         {
             try
@@ -363,7 +363,7 @@ namespace GASG.Fighting.Editor
             light.shadows = LightShadows.Soft;
         }
 
-        [MenuItem("GASG/Lighting Review/Rebake Review %#F11")]
+        [MenuItem("GASG/ステージ照明（レビュー）/04. ベイク/レビュー用コピーを再ベイク")]
         public static void StartBake()
         {
             var scene = SceneManager.GetActiveScene();

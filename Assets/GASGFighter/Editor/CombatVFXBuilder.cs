@@ -21,7 +21,7 @@ namespace GASG.Fighting.Editor
         static readonly Color Amber = new Color(1f, .32f, .035f);
         static readonly Color Teal = new Color(.1f, 1f, .77f);
 
-        [MenuItem("GASG/VFX/Create Missing Combat VFX Assets")]
+        [MenuItem("GASG/VFX/02. 生成/不足している対戦VFXアセットを作成")]
         public static void Build()
         {
             if (EditorApplication.isPlayingOrWillChangePlaymode)
@@ -45,7 +45,7 @@ namespace GASG.Fighting.Editor
             finally { EditorUtility.ClearProgressBar(); }
         }
 
-        [MenuItem("GASG/VFX/Dry Run - Check Output Paths")]
+        [MenuItem("GASG/VFX/01. 確認（変更なし）/出力先を確認")]
         public static void DryRun()
         {
             foreach (string n in new[] { "Hadouken", "Shoryuken", "Hit", "Guard", "NormalAttack" })

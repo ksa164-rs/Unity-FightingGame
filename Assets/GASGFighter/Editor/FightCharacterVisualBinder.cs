@@ -15,7 +15,7 @@ namespace GASG.Fighting.Editor
         private const string ControllerPath = "Assets/GASGFighter/Graphics/3D/Chara/animations/Player_001.controller";
         private const string AttackDatabasePath = "Assets/GASGFighter/Data/AttackMotionDatabase_Prototype.asset";
 
-        [MenuItem("GASG/Fighting Game/Apply Player_001 Visual and attack_001")]
+        [MenuItem("GASG/対戦プロトタイプ/01. 初期セットアップ/Player_001モデルを対戦シーンへ適用")]
         public static void ApplyToPrototypeScene()
         {
             if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
@@ -51,7 +51,7 @@ namespace GASG.Fighting.Editor
 
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
-            Debug.Log("[GASG Fighter][成功] Player_001とattack_001をPlayer 1 / 2へ適用しました。");
+            Debug.Log("[GASG Fighter][成功] Player_001とStandingLightPunchをPlayer 1 / 2へ適用しました。");
         }
 
         public static bool TryInstantiatePlayer001Visual(

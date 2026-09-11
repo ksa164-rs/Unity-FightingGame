@@ -10,7 +10,7 @@ namespace GASG.Fighting.Editor
         private FightCameraSettings cameraSettings;
         private Vector2 scrollPosition;
 
-        [MenuItem("GASG/Fighting Game/Open Camera Tuning")]
+        [MenuItem("GASG/対戦プロトタイプ/03. 調整/カメラを調整")]
         public static void OpenWindow()
         {
             FightCameraTuningWindow window = GetWindow<FightCameraTuningWindow>("格闘カメラ調整");

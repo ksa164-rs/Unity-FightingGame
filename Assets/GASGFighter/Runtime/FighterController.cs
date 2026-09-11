@@ -313,7 +313,7 @@ namespace GASG.Fighting
                 State = FighterState.HitStun;
                 stateFramesRemaining = attack.HitStunFrames;
                 knockbackVelocity = pushDirection * attack.Knockback;
-                PlaySystemAction(config != null ? config.AnimationProfile?.Hit : null, "Hit");
+                PlaySystemAction(config != null ? config.AnimationProfile?.Hit : null, "LightHit");
             }
 
             DamageReceived?.Invoke(this, damage, blocked);

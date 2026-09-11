@@ -15,9 +15,9 @@ namespace GASG.Fighting.Editor
         private const string HeavyPath = "Assets/GASGFighter/Data/Attack_Heavy.asset";
         private const string SpecialPath = "Assets/GASGFighter/Data/Attack_Special.asset";
         private const string ThrowPath = "Assets/GASGFighter/Data/Attack_Throw.asset";
-        private const string LightClipPath = "Assets/GASGFighter/Graphics/3D/Chara/animations/attack_001.anim";
+        private const string LightClipPath = "Assets/GASGFighter/Graphics/3D/Chara/animations/AS_p01_200.anim";
 
-        [MenuItem("GASG/Fighting Game/Open Attack Motion Database")]
+        [MenuItem("GASG/対戦プロトタイプ/02. モーションと技/攻撃モーションデータを開く")]
         public static void OpenDatabase()
         {
             FighterAttackDatabase database = AssetDatabase.LoadAssetAtPath<FighterAttackDatabase>(DatabasePath);
@@ -30,7 +30,7 @@ namespace GASG.Fighting.Editor
             EditorGUIUtility.PingObject(database);
         }
 
-        [MenuItem("GASG/Fighting Game/Create or Update Attack Motion Database")]
+        [MenuItem("GASG/対戦プロトタイプ/01. 初期セットアップ/攻撃モーションデータを初期作成・更新")]
         public static void CreateOrUpdateFromMenu()
         {
             FighterAttackDatabase database = CreateOrUpdateDatabase();

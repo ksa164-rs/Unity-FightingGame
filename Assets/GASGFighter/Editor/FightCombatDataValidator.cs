@@ -9,7 +9,7 @@ namespace GASG.Fighting.Editor
     /// <summary>技データを変更せず、調整前に確認すべき矛盾を報告します。</summary>
     public static class FightCombatDataValidator
     {
-        [MenuItem("GASG/Fighting Game/Validate Combat Data (Read Only)")]
+        [MenuItem("GASG/対戦プロトタイプ/04. 確認（変更なし）/対戦データを検証")]
         public static void ValidateAll()
         {
             string[] guids = AssetDatabase.FindAssets("t:FighterAttackDatabase", new[] { "Assets" });

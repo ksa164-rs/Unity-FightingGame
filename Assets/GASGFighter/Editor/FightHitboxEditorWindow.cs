@@ -14,7 +14,7 @@ namespace GASG.Fighting.Editor
         private int previewFrame;
         private Vector2 scrollPosition;
 
-        [MenuItem("GASG/Fighting Game/Open Hitbox Editor")]
+        [MenuItem("GASG/対戦プロトタイプ/03. 調整/ヒットボックスを編集")]
         public static void OpenWindow()
         {
             FightHitboxEditorWindow window = GetWindow<FightHitboxEditorWindow>("ヒットボックス編集");

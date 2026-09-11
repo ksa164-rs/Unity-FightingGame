@@ -26,8 +26,8 @@ namespace GASG.Fighting
 
         [Header("ゲームプレイとの接続")]
         [Tooltip("Action Catalog内の固定Action IDです。表示名を変更しても接続は維持されます。")]
-        [SerializeField] private string[] shoryukenActionIds = { "SpecialAttack" };
-        [SerializeField] private string[] hadoukenActionIds = { "SpecialAttack_Hadouken" };
+        [SerializeField] private string[] shoryukenActionIds = { "LightShoryuken" };
+        [SerializeField] private string[] hadoukenActionIds = { "Hadouken" };
         [Tooltip("キャラクター原点からの発生位置です。Xは攻撃方向に応じて反転します。")]
         [SerializeField] private Vector3 normalAttackOffset = new Vector3(0.3f, 1.1f, -0.08f);
         [SerializeField] private Vector3 shoryukenOffset = new Vector3(0.12f, 0f, -0.08f);

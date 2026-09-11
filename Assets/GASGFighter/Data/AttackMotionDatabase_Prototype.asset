@@ -15,7 +15,7 @@ MonoBehaviour:
   displayName: "\u7ACB\u3061\u4E2DP"
   action: {fileID: -3555184395167837202, guid: f83d0b1ae39caf14eb225b2665f04f57, type: 2}
   animationClip: {fileID: 7400000, guid: 2f32b2b272255d947a638e3b83e30cb6, type: 2}
-  animatorTrigger: attack_002
+  animatorTrigger: StandingMediumPunch
   startupFrames: 5
   activeFrames: 4
   recoveryFrames: 14
@@ -152,7 +152,7 @@ MonoBehaviour:
   displayName: "\u7ACB\u3061\u5F31P"
   action: {fileID: -252847325795049847, guid: f83d0b1ae39caf14eb225b2665f04f57, type: 2}
   animationClip: {fileID: 7400000, guid: c8f2b221a488269418346361a8ae5082, type: 2}
-  animatorTrigger: attack_001
+  animatorTrigger: StandingLightPunch
   startupFrames: 4
   activeFrames: 3
   recoveryFrames: 7
@@ -208,7 +208,7 @@ MonoBehaviour:
   displayName: "\u6607\u9F8D\u62F3\uFF08\u5F31\uFF09"
   action: {fileID: -7500575088735991356, guid: f83d0b1ae39caf14eb225b2665f04f57, type: 2}
   animationClip: {fileID: 7400000, guid: 0ffdaafbab3a4ba4aa386481209c420e, type: 2}
-  animatorTrigger: SpecialAttack
+  animatorTrigger: LightShoryuken
   startupFrames: 16
   activeFrames: 10
   recoveryFrames: 23
@@ -232,8 +232,8 @@ MonoBehaviour:
   cameraShakeFrequency: 30
   hitboxes:
   - label: Rising Main
-    startFrame: 5
-    endFrame: 14
+    startFrame: 16
+    endFrame: 25
     center: {x: 0.85, y: 1.45, z: 0}
     size: {x: 1.25, y: 1.65, z: 1.1}
   hitboxCenter: {x: 0.85, y: 1.45, z: 0}
@@ -264,7 +264,7 @@ MonoBehaviour:
   displayName: "\u7ACB\u3061\u5F37P"
   action: {fileID: -2631618015140645795, guid: f83d0b1ae39caf14eb225b2665f04f57, type: 2}
   animationClip: {fileID: 7400000, guid: 57a4b16e849d7e649a1642ff0b9047af, type: 2}
-  animatorTrigger: attack_003
+  animatorTrigger: StandingHeavyPunch
   startupFrames: 10
   activeFrames: 5
   recoveryFrames: 17

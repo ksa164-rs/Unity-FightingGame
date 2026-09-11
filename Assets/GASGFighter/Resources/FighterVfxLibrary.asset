@@ -18,9 +18,9 @@ MonoBehaviour:
   guardPrefab: {fileID: 4856440728611375420, guid: c41072ba105737a4b943749e582ff806, type: 3}
   hadoukenPrefab: {fileID: 109798464310440352, guid: 9027334a7f374b84abbea3986de3b805, type: 3}
   shoryukenActionIds:
-  - SpecialAttack
+  - LightShoryuken
   hadoukenActionIds:
-  - SpecialAttack_Hadouken
+  - Hadouken
   normalAttackOffset: {x: 0.3, y: 1.1, z: -0.08}
   shoryukenOffset: {x: 0.12, y: 0, z: -0.08}
   contactOffset: {x: 0, y: 0, z: -0.08}

@@ -83,14 +83,14 @@ namespace GASG.Fighting.Editor.Tests
                 typeof(FighterInputSource).GetField("lightBuffered", PrivateInstance).SetValue(fighter.InputSource, true);
                 fighter.SimulateFrame();
                 Assert.That(fighter.CurrentAttack, Is.SameAs(fighter.Config.AttackDatabase.LightAttack));
-                Assert.That(fighter.CurrentAttack.Action.MotionId, Is.EqualTo("AS_p01_100_001"));
-                Assert.That(fighter.CurrentAttack.AnimatorTrigger, Is.EqualTo("attack_001"));
+                Assert.That(fighter.CurrentAttack.Action.MotionId, Is.EqualTo("AS_p01_200"));
+                Assert.That(fighter.CurrentAttack.AnimatorTrigger, Is.EqualTo("StandingLightPunch"));
                 var animator = (Animator)new SerializedObject(fighter).FindProperty("animator").objectReferenceValue;
                 animator.Update(FightFrameTiming.FrameDuration);
-                Assert.That(animator.GetCurrentAnimatorStateInfo(0).IsName("attack_001"), Is.True);
+                Assert.That(animator.GetCurrentAnimatorStateInfo(0).IsName("StandingLightPunch"), Is.True);
                 Assert.That(animator.GetCurrentAnimatorClipInfo(0)[0].clip,
                     Is.SameAs(AssetDatabase.LoadAssetAtPath<AnimationClip>(
-                        "Assets/GASGFighter/Graphics/3D/Chara/animations/attack_001.anim")));
+                        "Assets/GASGFighter/Graphics/3D/Chara/animations/AS_p01_200.anim")));
             }
             yield return new ExitPlayMode();
         }

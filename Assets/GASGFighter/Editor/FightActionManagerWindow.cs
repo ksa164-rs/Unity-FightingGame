@@ -10,7 +10,7 @@ namespace GASG.Fighting.Editor
         private FighterAnimationProfile profile;
         private FighterAttackDatabase attackDatabase;
         private Vector2 scrollPosition;
-        private string newActionId = "AS_p01_000_001";
+        private string newActionId = "AS_p01_000";
         private string newDisplayName = "新規モーション";
         private int characterNumber = 1;
         private int categoryIndex;
@@ -19,7 +19,7 @@ namespace GASG.Fighting.Editor
         private static readonly string[] CategoryLabels = { "000 基本移動", "100 通常攻撃", "200 必殺技", "300 投げ", "400 防御・被弾", "900 システム" };
         private AnimationClip newAnimationClip;
 
-        [MenuItem("GASG/Fighting Game/Open Animation Action Manager")]
+        [MenuItem("GASG/対戦プロトタイプ/02. モーションと技/モーションAction管理を開く")]
         public static void Open()
         {
             FightActionManagerWindow window = GetWindow<FightActionManagerWindow>("モーション管理");
@@ -37,7 +37,7 @@ namespace GASG.Fighting.Editor
             EditorGUILayout.Space(6f);
             EditorGUILayout.LabelField("モーション管理", EditorStyles.boldLabel);
             EditorGUILayout.HelpBox(
-                "管理番号 / 表示名 / Animation Clipを一元管理します。AS_p01_000_001 = モーション / キャラクター01 / 分類000 / 連番001。番号は登録後に固定し、表示名は自由に変更できます。",
+                "管理番号 / 表示名 / Animation Clipを一元管理します。AS_p01_000 = モーション / キャラクター01 / 分類000 / 連番001。番号は登録後に固定し、表示名は自由に変更できます。",
                 MessageType.Info);
 
             if (catalog == null || profile == null)
@@ -179,7 +179,7 @@ namespace GASG.Fighting.Editor
                 try
                 {
                     if (!FighterMotionNaming.IsValid(newActionId))
-                        throw new System.InvalidOperationException("管理番号はAS_p01_000_001形式で入力してください。全角文字は使えません。");
+                        throw new System.InvalidOperationException("管理番号はAS_p01_000形式で入力してください。全角文字は使えません。");
                     FightActionCatalogMigration.CreateAction(
                         catalog,
                         newActionId,

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_400_001
+  m_Name: AS_p01_100
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
   actionId: Block
-  motionId: AS_p01_400_001
+  motionId:AS_p01_100
   displayName: "\u30AC\u30FC\u30C9"
   animationClip: {fileID: 0}
 --- !u!114 &-7514537576535298695
@@ -26,10 +26,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_900_001
+  m_Name: RoundReset
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
-  actionId: Reset
-  motionId: AS_p01_900_001
+  actionId: RoundReset
+  motionId:
   displayName: "\u30E9\u30A6\u30F3\u30C9\u30EA\u30BB\u30C3\u30C8"
   animationClip: {fileID: 0}
 --- !u!114 &-7500575088735991356
@@ -42,10 +42,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_200_001
+  m_Name: AS_p01_207
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
-  actionId: SpecialAttack
-  motionId: AS_p01_200_001
+  actionId: LightShoryuken
+  motionId:AS_p01_207
   displayName: "\u6607\u9F8D\u62F3\uFF08\u5F31\uFF09"
   animationClip: {fileID: 7400000, guid: 0ffdaafbab3a4ba4aa386481209c420e, type: 2}
 --- !u!114 &-6028753248570878936
@@ -58,10 +58,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_400_003
+  m_Name: AS_p01_102
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
   actionId: Knockdown
-  motionId: AS_p01_400_003
+  motionId:AS_p01_102
   displayName: "\u30C0\u30A6\u30F3"
   animationClip: {fileID: 0}
 --- !u!114 &-5387676842828362316
@@ -74,10 +74,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_300_001
+  m_Name: AS_p01_104
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
-  actionId: Throw
-  motionId: AS_p01_300_001
+  actionId: ForwardThrow
+  motionId:AS_p01_104
   displayName: "\u524D\u6295\u3052"
   animationClip: {fileID: 0}
 --- !u!114 &-4819424074664478194
@@ -90,10 +90,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_000_001
+  m_Name: AS_p01_000
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
   actionId: Idle
-  motionId: AS_p01_000_001
+  motionId:AS_p01_000
   displayName: "\u5F85\u6A5F"
   animationClip: {fileID: 7400000, guid: ff26a417bdc1add47a9f80dd03335808, type: 2}
 --- !u!114 &-4777398357738297469
@@ -106,10 +106,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_400_002
+  m_Name: AS_p01_101
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
-  actionId: Hit
-  motionId: AS_p01_400_002
+  actionId: LightHit
+  motionId:AS_p01_101
   displayName: "\u88AB\u5F3E"
   animationClip: {fileID: 7400000, guid: 6b9290f7b7e84b74a4d657d29c3df002, type: 2}
 --- !u!114 &-4063931129865720999
@@ -122,10 +122,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_000_204
+  m_Name: AS_p01_204
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
-  actionId: AS_p01_000_204
-  motionId: AS_p01_000_204
+  actionId: CrouchingMediumPunch
+  motionId:AS_p01_204
   displayName: "\u4E0B\u6BB5(\u4E2D)"
   animationClip: {fileID: 7400000, guid: 1f7a291eb86934f43a2c45ac0c4d7fbb, type: 2}
 --- !u!114 &-3555184395167837202
@@ -138,10 +138,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_100_002
+  m_Name: AS_p01_201
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
-  actionId: attack_002
-  motionId: AS_p01_100_002
+  actionId: StandingMediumPunch
+  motionId:AS_p01_201
   displayName: "\u7ACB\u3061\u4E2DP"
   animationClip: {fileID: 7400000, guid: 2f32b2b272255d947a638e3b83e30cb6, type: 2}
 --- !u!114 &-2962950735901230167
@@ -154,10 +154,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_000_003
+  m_Name: AS_p01_002
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
   actionId: Jump
-  motionId: AS_p01_000_003
+  motionId:AS_p01_002
   displayName: "\u30B8\u30E3\u30F3\u30D7"
   animationClip: {fileID: 0}
 --- !u!114 &-2631618015140645795
@@ -170,10 +170,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_100_003
+  m_Name: AS_p01_202
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
-  actionId: attack_003
-  motionId: AS_p01_100_003
+  actionId: StandingHeavyPunch
+  motionId:AS_p01_202
   displayName: "\u7ACB\u3061\u5F37P"
   animationClip: {fileID: 7400000, guid: 57a4b16e849d7e649a1642ff0b9047af, type: 2}
 --- !u!114 &-2253242645644267455
@@ -186,10 +186,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_400_004
+  m_Name: AS_p01_103
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
   actionId: Thrown
-  motionId: AS_p01_400_004
+  motionId:AS_p01_103
   displayName: "\u6295\u3052\u3089\u308C"
   animationClip: {fileID: 0}
 --- !u!114 &-2136491105938034194
@@ -202,10 +202,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_200_002
+  m_Name: AS_p01_206
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
-  actionId: SpecialAttack_Hadouken
-  motionId: AS_p01_200_002
+  actionId: Hadouken
+  motionId:AS_p01_206
   displayName: "\u6CE2\u52D5\u62F3"
   animationClip: {fileID: 7400000, guid: 077d82ef205c9fc43918751d5796cc0c, type: 2}
 --- !u!114 &-1389430993858289380
@@ -218,10 +218,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_000_002
+  m_Name: AS_p01_001
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
   actionId: CrouchIdle
-  motionId: AS_p01_000_002
+  motionId:AS_p01_001
   displayName: "\u3057\u3083\u304C\u307F\u5F85\u6A5F"
   animationClip: {fileID: 7400000, guid: 6d699c16536f3264fb541724a866ae7a, type: 2}
 --- !u!114 &-252847325795049847
@@ -234,10 +234,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_100_001
+  m_Name: AS_p01_200
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
-  actionId: attack_001
-  motionId: AS_p01_100_001
+  actionId: StandingLightPunch
+  motionId:AS_p01_200
   displayName: "\u7ACB\u3061\u5F31P"
   animationClip: {fileID: 7400000, guid: c8f2b221a488269418346361a8ae5082, type: 2}
 --- !u!114 &11400000
@@ -283,10 +283,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_000_203
+  m_Name: AS_p01_203
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
-  actionId: AS_p01_000_203
-  motionId: AS_p01_000_203
+  actionId: CrouchingLightPunch
+  motionId:AS_p01_203
   displayName: "\u4E0B\u6BB5(\u5F31)"
   animationClip: {fileID: 7400000, guid: 0a3455f7f46df174e8ca14d1d7910eff, type: 2}
 --- !u!114 &3556974775951495154
@@ -299,10 +299,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_000_004
+  m_Name: AS_p01_003
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
   actionId: Land
-  motionId: AS_p01_000_004
+  motionId:AS_p01_003
   displayName: "\u7740\u5730"
   animationClip: {fileID: 0}
 --- !u!114 &3778605825182672798
@@ -315,10 +315,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_000_005
+  m_Name: AS_p01_005
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
   actionId: ForwardStep
-  motionId: AS_p01_000_005
+  motionId:AS_p01_005
   displayName: "\u524D\u30B9\u30C6\u30C3\u30D7"
   animationClip: {fileID: 0}
 --- !u!114 &5625164545758067152
@@ -331,10 +331,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_000_006
+  m_Name: AS_p01_006
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
   actionId: BackwardStep
-  motionId: AS_p01_000_006
+  motionId:AS_p01_006
   displayName: "\u5F8C\u308D\u30B9\u30C6\u30C3\u30D7"
   animationClip: {fileID: 0}
 --- !u!114 &5838236545662037428
@@ -347,9 +347,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4cc47fa62789b489e011f08a81241b, type: 3}
-  m_Name: AS_p01_000_205
+  m_Name: AS_p01_205
   m_EditorClassIdentifier: Assembly-CSharp::GASG.Fighting.FighterActionDefinition
-  actionId: AS_p01_000_205
-  motionId: AS_p01_000_205
+  actionId: CrouchingHeavyPunch
+  motionId:AS_p01_205
   displayName: "\u4E0B\u6BB5(\u5F37)"
   animationClip: {fileID: 7400000, guid: af49639270fc0074b8f1ecf29aef81d9, type: 2}

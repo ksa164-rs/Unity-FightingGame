@@ -16,7 +16,7 @@ namespace GASG.Fighting.Editor
         private const string SceneFolder = RootFolder + "/Scenes";
         private const string ScenePath = SceneFolder + "/LocalVersusPrototype.unity";
 
-        [MenuItem("GASG/Fighting Game/Create Local Versus Prototype Scene")]
+        [MenuItem("GASG/対戦プロトタイプ/01. 初期セットアップ/ローカル対戦シーンを作成")]
         public static void CreatePrototypeScene()
         {
             // 未保存の作業を破棄しないよう、シーン切り替え前に必ず確認する。
@@ -45,7 +45,7 @@ namespace GASG.Fighting.Editor
             FighterAttackDefinition lightAttack = GetOrCreateAttack(
                 DataFolder + "/Attack_Light.asset",
                 "Light Attack",
-                "attack_001",
+                "StandingLightPunch",
                 5, 3, 11,
                 60, 14, 9, 5, 2.5f,
                 GuardHeight.Mid,
@@ -56,7 +56,7 @@ namespace GASG.Fighting.Editor
             FighterAttackDefinition mediumAttack = GetOrCreateAttack(
                 DataFolder + "/Attack_Medium.asset",
                 "Medium Attack",
-                "MediumAttack",
+                "StandingMediumPunch",
                 7, 3, 14,
                 85, 18, 11, 6, 3.2f,
                 GuardHeight.Mid,
@@ -67,7 +67,7 @@ namespace GASG.Fighting.Editor
             FighterAttackDefinition heavyAttack = GetOrCreateAttack(
                 DataFolder + "/Attack_Heavy.asset",
                 "Heavy Attack",
-                "HeavyAttack",
+                "StandingHeavyPunch",
                 10, 4, 19,
                 110, 22, 14, 8, 4.5f,
                 GuardHeight.Mid,
@@ -78,7 +78,7 @@ namespace GASG.Fighting.Editor
             FighterAttackDefinition specialAttack = GetOrCreateAttack(
                 DataFolder + "/Attack_Special.asset",
                 "Special Attack",
-                "SpecialAttack",
+                "LightShoryuken",
                 14, 6, 26,
                 170, 28, 18, 10, 7f,
                 GuardHeight.Mid,
@@ -168,7 +168,7 @@ namespace GASG.Fighting.Editor
             Debug.Log($"[GASG Fighter][成功] ローカル対戦シーンを作成しました: {ScenePath}");
         }
 
-        [MenuItem("GASG/Fighting Game/Validate Local Versus Prototype Scene")]
+        [MenuItem("GASG/対戦プロトタイプ/04. 確認（変更なし）/ローカル対戦シーンを検証")]
         public static void ValidatePrototypeScene()
         {
             SceneAsset sceneAsset = AssetDatabase.LoadAssetAtPath<SceneAsset>(ScenePath);

@@ -299,7 +299,7 @@ namespace GASG.Fighting.Editor
             string triggerName)
         {
             // 被弾中の追撃でも怯みを先頭から再生し、同期後もこの設定を保持する。
-            bool canRestartOnHit = triggerName == "Hit";
+            bool canRestartOnHit = triggerName == "LightHit";
             AnimatorStateTransition[] transitions = stateMachine.anyStateTransitions;
             for (int i = 0; i < transitions.Length; i++)
             {

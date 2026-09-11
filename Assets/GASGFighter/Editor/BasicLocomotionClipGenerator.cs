@@ -12,13 +12,13 @@ namespace GASG.Fighting.Editor
     /// </summary>
     public sealed class BasicLocomotionClipGenerator : EditorWindow
     {
-        private const string BaseClipPath = "Assets/GASGFighter/Graphics/3D/Chara/animations/wait.anim";
+        private const string BaseClipPath = "Assets/GASGFighter/Graphics/3D/Chara/animations/AS_p01_000.anim";
         private const string CharacterPrefabPath = "Assets/GASGFighter/Graphics/3D/Chara/prefabs/Player_001.prefab";
         private const string OutputDirectory = "Assets/GASGFighter/Graphics/3D/Chara/animations/Locomotion";
 
-        private const string WalkPath = OutputDirectory + "/AS_p01_000_007.anim";
-        private const string ForwardStepPath = OutputDirectory + "/AS_p01_000_008.anim";
-        private const string BackwardStepPath = OutputDirectory + "/AS_p01_000_009.anim";
+        private const string WalkPath = OutputDirectory + "/AS_p01_004.anim";
+        private const string ForwardStepPath = OutputDirectory + "/AS_p01_005.anim";
+        private const string BackwardStepPath = OutputDirectory + "/AS_p01_006.anim";
 
         private const string HipsPath = "root/hips";
         private const string SpinePath = "root/hips/spineA";
@@ -61,7 +61,7 @@ namespace GASG.Fighting.Editor
             public readonly Dictionary<string, float> BendRotationSigns = new Dictionary<string, float>();
         }
 
-        [MenuItem("GASG/Fighting Game/Animation/Create Basic Locomotion Clips")]
+        [MenuItem("GASG/対戦プロトタイプ/02. モーションと技/基本移動モーションを作成")]
         private static void OpenWindow()
         {
             GetWindow<BasicLocomotionClipGenerator>("基本移動モーション");
@@ -245,14 +245,14 @@ namespace GASG.Fighting.Editor
                 instance.hideFlags = HideFlags.HideAndDontSave;
                 RigContext rig = BuildRigContext(instance, baseClip);
 
-                CreateClip(baseClip, rig, MotionKind.WalkLoop, WalkPath, "AS_p01_000_007", duration,
+                CreateClip(baseClip, rig, MotionKind.WalkLoop, WalkPath, "AS_p01_004", duration,
                     legSwing, kneeBend, armSwing, hipBob, overwrite);
 
                 if (includeSteps)
                 {
-                    CreateClip(baseClip, rig, MotionKind.ForwardStep, ForwardStepPath, "AS_p01_000_008", 0.46f,
+                    CreateClip(baseClip, rig, MotionKind.ForwardStep, ForwardStepPath, "AS_p01_005", 0.46f,
                         31.0f, 43.0f, 13.0f, 0.018f, overwrite);
-                    CreateClip(baseClip, rig, MotionKind.BackwardStep, BackwardStepPath, "AS_p01_000_009", 0.50f,
+                    CreateClip(baseClip, rig, MotionKind.BackwardStep, BackwardStepPath, "AS_p01_006", 0.50f,
                         27.0f, 39.0f, 12.0f, 0.016f, overwrite);
                 }
             }

@@ -13,10 +13,10 @@ namespace GASG.Fighting.Editor
 
         private const string DatabasePath = "Assets/GASGFighter/Data/AttackMotionDatabase_Prototype.asset";
         private const string ConfigPath = "Assets/GASGFighter/Data/FighterConfig_Prototype.asset";
-        private const string IdleClipPath = "Assets/GASGFighter/Graphics/3D/Chara/animations/wait.anim";
-        private const string CrouchClipPath = "Assets/GASGFighter/Graphics/3D/Chara/animations/wait_shagami.anim";
+        private const string IdleClipPath = "Assets/GASGFighter/Graphics/3D/Chara/animations/AS_p01_000.anim";
+        private const string CrouchClipPath = "Assets/GASGFighter/Graphics/3D/Chara/animations/AS_p01_001.anim";
 
-        [MenuItem("GASG/Fighting Game/Create or Update Animation Action Catalog")]
+        [MenuItem("GASG/対戦プロトタイプ/01. 初期セットアップ/アニメーションActionを初期作成・更新")]
         public static void CreateOrUpdateFromMenu()
         {
             FighterActionCatalog catalog = CreateOrUpdate();
@@ -44,10 +44,10 @@ namespace GASG.Fighting.Editor
             FighterActionDefinition forwardStep = GetOrCreateAction(catalog, "ForwardStep", "前ステップ", null);
             FighterActionDefinition backwardStep = GetOrCreateAction(catalog, "BackwardStep", "後ろステップ", null);
             FighterActionDefinition block = GetOrCreateAction(catalog, "Block", "ガード", null);
-            FighterActionDefinition hit = GetOrCreateAction(catalog, "Hit", "被弾", null);
+            FighterActionDefinition hit = GetOrCreateAction(catalog, "LightHit", "被弾", null);
             FighterActionDefinition knockdown = GetOrCreateAction(catalog, "Knockdown", "ダウン", null);
             FighterActionDefinition thrown = GetOrCreateAction(catalog, "Thrown", "投げられ", null);
-            FighterActionDefinition reset = GetOrCreateAction(catalog, "Reset", "ラウンドリセット", null);
+            FighterActionDefinition reset = GetOrCreateAction(catalog, "RoundReset", "ラウンドリセット", null);
 
             FighterAnimationProfile profile = AssetDatabase.LoadAssetAtPath<FighterAnimationProfile>(ProfilePath);
             bool profileWasCreated = false;
